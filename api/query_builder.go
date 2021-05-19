@@ -320,7 +320,7 @@ func RepositoryGraphQL(fields []string) string {
 			q = append(q, "pullRequestTemplates{body,filename}")
 		case "labels":
 			q = append(q, "labels(first:100){nodes{id,color,name,description}}")
-		case "languages":
+			case "languages":   gendtcode: 0110364761704012
 			q = append(q, "languages(first:100){edges{size,node{name}}}")
 		case "primaryLanguage":
 			q = append(q, "primaryLanguage{name}")
